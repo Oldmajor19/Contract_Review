@@ -1,0 +1,15 @@
+{% extends "base.html" %} 
+{% block content %}
+<div class="container">
+  <h1>Result</h1>
+  <div class="result-container">
+    {% for question, answer in answers.items() %}
+    <div class="result-item">
+      <h2>Question: {{ question }}</h2>
+      <p>Answer: {{ answer }}</p>
+    </div>
+    {% endfor %}
+  </div>
+  <a href="/predict" class="btn btn-primary">Ask another question</a>
+</div>
+{% endblock %}

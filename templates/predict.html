@@ -1,0 +1,21 @@
+{% extends "base.html" %} 
+{% block content %}
+<div class="container">
+  <h1>Select Your Questions</h1>
+  <form action="/predict" method="post">
+    {% for question in questions %}
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="questions" id="{{ question }}" value="{{ question }}">
+        <label class="form-check-label" for="{{ question }}">
+            {{ question }}
+        </label>
+    </div>
+    {% endfor %}
+    <div class="form-group">
+      <label for="context">Insert Your Contract</label>
+      <textarea class="form-control" id="context_text" name="context" rows="3" placeholder="Insert your contract here"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+{% endblock %}

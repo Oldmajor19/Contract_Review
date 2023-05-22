@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container">
+        <h1>Welcome to Contract Review!</h1>
+        <p>
+            This tool uses the CUAD (Contract Understanding Atticus Dataset) model, an expert-annotated NLP dataset for legal contract review. 
+            It's designed to provide a legal professional's review of 41 types of contract provisions.
+        </p>
+        <p>
+            You can use this tool to predict the contract provisions that might need reviewing in a legal contract.
+        </p>
+        <a href="/predict" class="button">Predict Now</a>
+    </div>
+{% endblock %}

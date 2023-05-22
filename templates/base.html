@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contract Review</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <nav>
+        <div id="logo">Contract Review</div>
+        <ul id="navbar">
+            <li><a href="/">Home</a></li>
+            <li><a href="https://medium.com/@collins1olawale/9339042eb6df">About</a></li>
+            <li><a href="/predict">Predict</a></li>
+        </ul>
+    </nav>
+
+    {% block content %}{% endblock %}
+</body>
+</html>
