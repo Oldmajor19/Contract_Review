@@ -12,7 +12,7 @@ We have leveraged the pretrained model from the [Atticus Project](https://www.at
 * static : Contains all the styling required for the Flask application.
 * templates : Contains the HTML files required for the frontend of our Flask application.
 * Contract_Review_PR.ipynb : The notebook file that runs the pretrained model with the questions and contract.
-* index.py : The main file to run the Flask application. You will need to define the path to the model. The model can be gotten from https://zenodo.org/record/4599830#.ZGj8zXbML18
+* index.py : The main file to run the Flask application. You will need to define the path to the [CUAD MODEL](https://zenodo.org/record/4599830#.ZGj8zXbML18).
 * predict.py : Contains the function to make predictions from the pretrained model.
 * questions.txt : This file contains all 41 questions that the model was trained on.
 * requirements.txt : Lists the Python libraries required for this project.
