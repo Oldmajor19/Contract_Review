@@ -11,11 +11,29 @@
         </label>
     </div>
     {% endfor %}
+    <button type="button" class="btn btn-secondary" onclick="selectAll()">Select All</button>
+    <button type="button" class="btn btn-secondary" onclick="deselectAll()">Deselect All</button>
     <div class="form-group">
       <label for="context">Insert Your Contract</label>
       <textarea class="form-control" id="context_text" name="context" rows="3" placeholder="Insert your contract here"></textarea>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+  </form>
 </div>
+
+<script>
+function selectAll() {
+  var checkboxes = document.getElementsByName('questions');
+  for (var i = 0; i < checkboxes.length; i++) {
+    checkboxes[i].checked = true;
+  }
+}
+
+function deselectAll() {
+  var checkboxes = document.getElementsByName('questions');
+  for (var i = 0; i < checkboxes.length; i++) {
+    checkboxes[i].checked = false;
+  }
+}
+</script>
 {% endblock %}
